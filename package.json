@@ -1,0 +1,36 @@
+{
+  "name": "you-should-not-use-gulp-or-grunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"This is a start script\" && exit 0",
+    "prestart": "echo \"This is a pre-start script\" && exit 0",
+    "poststart": "echo \"This is a post-start script\" && exit 0",
+    "stop": "echo \"This is a stop script\" && exit 0",
+    "prestop": "echo \"This is a pre-stop script\" && exit 0",
+    "poststop": "echo \"This is a post-stop script\" && exit 0",
+    "custom": "echo \"This is a CUSTOM script\" && exit 0",
+    "precustom": "echo \"This is a PRE CUSTOM script\" && exit 0",
+    "postcustom": "echo \"This is a POST CUSTOM script\" && exit 0",
+    "dev-server": "webpack-dev-server --progress --colors",
+    "clean": "rm dist/*; exit 0",
+    "static": "http-server dist",
+    "webpack": "webpack --progress --colors",
+    "all": "npm run clean && npm run webpack && npm run static"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "http-server": "^0.9.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
